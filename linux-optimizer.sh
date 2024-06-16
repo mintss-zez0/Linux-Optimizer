@@ -36,6 +36,7 @@ green_msg 'This script will automatically Optimize your Linux Server.'
 green_msg 'Tested on: Ubuntu 20+, Debian 11+, CentOS stream 8+, AlmaLinux 8+, Fedora 37+'
 green_msg 'Root access is required.' 
 green_msg 'Source is @ https://github.com/hawshemi/linux-optimizer' 
+green_msg 'duck modded'
 green_msg '================================================================='
 echo 
 
@@ -286,7 +287,7 @@ fedora)
     ;;
 linuxmint)
     # Linux Mint
-    wget "https://raw.githubusercontent.com/hawshemi/Linux-Optimizer/main/scripts/linuxmint-optimizer.sh" -q -O linuxmint-optimizer.sh && chmod +x linuxmint-optimizer.sh && bash linuxmint-optimizer.sh 
+    wget "https://raw.githubusercontent.com/mintss-zez0/Linux-Optimizer/main/scripts/linuxmint-optimizer.sh" -q -O linuxmint-optimizer.sh && chmod +x linuxmint-optimizer.sh && bash linuxmint-optimizer.sh 
     ;;    
 unknown)
     # Unknown
