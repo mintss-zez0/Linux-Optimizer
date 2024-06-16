@@ -222,6 +222,13 @@ elif [[ $(grep -oP '(?<=^NAME=").*(?=")' /etc/os-release) == "Fedora Linux" ]]; 
     yellow_msg "OS: Fedora"
     echo 
     sleep 0.5
+elif [[ $(grep -oP '(?<=^NAME=").*(?=")' /etc/os-release) == "Linux Mint" ]]; then
+    OS="linuxmint"
+    echo 
+    sleep 0.5
+    yellow_msg "OS: Linux Mint"
+    echo 
+    sleep 0.5    
 else
     echo 
     sleep 0.5
@@ -277,6 +284,10 @@ fedora)
     # Fedora
     wget "https://raw.githubusercontent.com/hawshemi/Linux-Optimizer/main/scripts/fedora-optimizer.sh" -q -O fedora-optimizer.sh && chmod +x fedora-optimizer.sh && bash fedora-optimizer.sh 
     ;;
+linuxmint)
+    # Linux Mint
+    wget "https://raw.githubusercontent.com/hawshemi/Linux-Optimizer/main/scripts/linuxmint-optimizer.sh" -q -O linuxmint-optimizer.sh && chmod +x linuxmint-optimizer.sh && bash linuxmint-optimizer.sh 
+    ;;    
 unknown)
     # Unknown
     exit 
